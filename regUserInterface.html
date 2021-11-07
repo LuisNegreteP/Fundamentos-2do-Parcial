@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <title>Registro de Usuario</title>
+</head>
+
+<body>
+
+    <header> 
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="d-flex justify-content-start">
+              <a class="navbar-brand" href="index.html">Regresa al índice</a>
+              <a class="navbar-brand" href="#">Regresa a la página de interfaces.</a>
+            </div>
+          </nav>
+    </header>
+
+    <br/>
+    <br/>
+    
+    <div class="container w-50 p-3 border border-dark rounded bg-light text-dark">
+        <form>
+            <h1 class="text-center">Registro de Usuario.</h1>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Confirmar Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword2" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputName1" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="exampleInputName1" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputLastName1" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="exampleInputLastName1" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Aceptar</button>
+                <button onclick="window.location.href='sesionInterface.html';" class="btn btn-primary">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    <br/>
+</body>
+</html>
