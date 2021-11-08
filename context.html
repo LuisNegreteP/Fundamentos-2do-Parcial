@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <title>Diagrama de contexto</title>
+</head>
+<body>
+    <header> 
+        <nav class="navbar navbar-dark bg-dark">
+              <a class="navbar-brand" href="index.html">Regresa al Índice</a>
+        </nav>
+    </header>
+
+    <div class="container w-500 p-3 border border-dark rounded bg-light text-dark"  style="margin-top: 50px; margin-bottom: 50px;"> 
+            <h1 class="text-center" style="margin-top: 15px; margin-bottom: 20px;">Diagrama de contexto.</h1>
+        <div class="text-center">
+            <figure class="figure-img">
+                <img class="img-fluid " src="img/contexto.png" alt="Diagrama de modulos">    
+            </figure>
+            <p> Equipo de trabajo: "Los Inges"</p>
+            
+        </div> 
+    </div>
+    <div class="container w-500 p-3 border border-dark rounded bg-light text-dark"  style="margin-top: 50px; margin-bottom: 50px;"> 
+        <h1 class="text-center" style="margin-top: 15px; margin-bottom: 20px;">Descripción de actores.</h1>
+        <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Responsabilidades</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">A-0001</th>
+                <td>Profesor.</td>
+                <td>Profesor podrá registrar, diseñar y modificar exámenes, 
+                    así como de crear y modificar eventos donde designará la 
+                    fecha de aplicación de exámenes y dará permisos a los alumnos 
+                    que contestarán el examen. Además podrá consultar las 
+                    calificaciones obtenidas en los eventos creados por él.</td>
+                <td>
+                    <ul>
+                        <li>Registrar, diseñar y modificar exámenes.</li>
+                        <li>Consultar calificaciones. </li>
+                    </ul>
+                </td>                
+              </tr>
+              <tr>
+                <th scope="row">A-0002</th>
+                <td>Alumno.</td>
+                <td>Alumno será capáz de buscar y visualizar exámenes 
+                    públicos que resolverá en cualquier momento o privados 
+                    a los que se le haya invitado que contestará en tiempo
+                     y forma. Al finalizar cualquier examen será capaz de
+                      ver su desempeño.</td>
+                <td>
+                    <ul>
+                        <li>Buscar exámenes públicos y privados.</li>
+                        <li>Contestar exámenes.</li>
+                        <li>Visualizar su desempeño en el examen.</li>
+                    </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">A-0003</th>
+                <td>Administrador del sistema.</td>
+                <td>Administrador del sistema será capaz de manejar la base de datos, 
+                    esto incluye modificar usuarios, calificaciones, examenes, etc.</td>
+                <td>
+                    <ul>
+                        <li>Dar mantenimiento a la base de datos del sistema.</li>
+                    </ul>
+                </td>
+              </tr>              
+            </tbody>
+          </table>
+          <div class="text-center"><p> Equipo de trabajo: "Los Inges"</p></div>
+        
+</div>
+</body>
+</html>
