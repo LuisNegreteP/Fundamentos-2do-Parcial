@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <title>Inicio de sesión</title>
+</head>
+
+<body>
+
+    <header> 
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="d-flex justify-content-start">
+              <a class="navbar-brand" href="index.html">Regresa al índice</a>
+            </div>
+          </nav>
+    </header>
+
+    <br/>
+    <br/>
+    
+    <div class="container w-100 p-3 border border-dark rounded bg-light text-dark">
+        <h1 class="text-center"> Requerimientos para el Sistema de aplicación de Exámenes. </h1>
+        <br/>
+        <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Categoría</th>
+                <th scope="col">Solicitado</th>
+                <th scope="col">Prioridad</th>
+                <th scope="col">Estatus</th>
+                <th scope="col">Dependencia</th>
+                <th scope="col">Caso de Uso</th>
+                <th scope="col">Comentarios</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">RF-0001</th>
+                <td>Inicio de sesión.</td>
+                <td>Usuario</td>
+                <td>Profesor Newton</td>
+                <td>Media</td>
+                <td>Identificado</td>
+                <td></td>
+                <td>CU-1001</td>
+                <td>Para profesor y Estudiantes.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF-0002</th>
+                <td>Registrar usuario.</td>
+                <td>Usuario</td>
+                <td>Profesor Newton</td>
+                <td>Media</td>
+                <td>Identificado</td>
+                <td></td>
+                <td>CU-1002</td>
+                <td>Correo eléctronico que identifica tipo de usuario, contraseña. Adicional: nombre y apellidos. </td>
+              </tr>
+              <tr>
+                <th scope="row">RF-0003</th>
+                <td>Actualizar datos usuario.</td>
+                <td>Usuario</td>
+                <td>Profesor Newton</td>
+                <td>Media</td>
+                <td>Identificado</td>
+                <td>RF-0002</td>
+                <td>CU-1003</td>
+                <td>Cambiar datos de usuario.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF-0004</th>
+                <td>Consultar usuarios.</td>
+                <td>Usuario</td>
+                <td>Profesor Newton</td>
+                <td>Media</td>
+                <td>Identificado</td>
+                <td></td>
+                <td>CU-1004</td>
+                <td>Visualizar todos los usuarios registrados.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF-0005</th>
+                <td>Borrar Usuarios.</td>
+                <td>Usuario</td>
+                <td>Profesor Newton</td>
+                <td>Media</td>
+                <td>Identificado</td>
+                <td></td>
+                <td>CU-1004b</td>
+                <td>Dar de baja usuarios.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF-0006</th>
+                <td>Registrar examen.</td>
+                <td>Examen</td>
+                <td>Profesor Newton</td>
+                <td>Alta</td>
+                <td>Identificado</td>
+                <td></td>
+                <td>CU-2000</td>
+                <td>Nombre de examen, descripción. Opcionalmente: materia, lista de preguntas y respuestas. Extra: Tipo de examen, cantidad de preguntas a visualizar.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF-0007</th>
+                <td>Registrar preguntas.</td>
+                <td>Examen</td>
+                <td>Profesor Newton</td>
+                <td>Alta</td>
+                <td>Identificado</td>
+                <td></td>
+                <td>CU-2001</td>
+                <td>Opción múltiple, Falso/Verdadero, Asociación de columnas. Nunca preguntas abiertas.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF-0008</th>
+                <td>Calificar examen.</td>
+                <td>Calificación</td>
+                <td>Profesor Newton</td>
+                <td>Alta</td>
+                <td>Identificado</td>
+                <td>RF-0006, RF-0007, RF-0009</td>
+                <td>CU-3000</td>
+                <td>Recuento de preguntas contestadas correctamente o incorrectamente y calificación.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF-0009</th>
+                <td>Aplicación examen.</td>
+                <td>Examen</td>
+                <td>Profesor Newton</td>
+                <td>Alta</td>
+                <td>Identificado</td>
+                <td>RF-0006, RF-0007, RF-0010</td>
+                <td>CU-2000</td>
+                <td>Para cualquier usuario del sistema si es público o por invitación si es privado.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF-0010</th>
+                <td>Agendar evento.</td>
+                <td>Examen</td>
+                <td>Profesor Newton</td>
+                <td>Alta</td>
+                <td>Identificado</td>
+                <td>RF-0006, RF-0007</td>
+                <td>CU-2000</td>
+                <td>Asignar fecha/hora, agregar estudiantes y enviar invitación por correo.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF-0011</th>
+                <td>Modificar examen.</td>
+                <td>Examen</td>
+                <td>Profesor Newton</td>
+                <td>Baja</td>
+                <td>Identificado</td>
+                <td>RF-0006, RF-0007</td>
+                <td>CU-2000</td>
+                <td>Cambiar datos. Agregar, eliminar o modificar preguntas.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF-0012</th>
+                <td>Modificar evento.</td>
+                <td>Examen</td>
+                <td>Profesor Newton</td>
+                <td>Baja</td>
+                <td>Identificado</td>
+                <td>RF-0010</td>
+                <td>CU-2000</td>
+                <td>Cambiar fecha/hora. Agregar/eliminar estudiantes.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF-0013</th>
+                <td>Búsqueda general.</td>
+                <td>Búsqueda</td>
+                <td>Profesor Newton</td>
+                <td>Baja</td>
+                <td>Identificado</td>
+                <td></td>
+                <td>CU-4000</td>
+                <td>De examenes públicos, eventos a examenes privados.</td>
+              </tr>
+              <tr>
+                <th scope="row">RF-0014</th>
+                <td>Consultar calificaciones.</td>
+                <td>Calificación</td>
+                <td>Profesor Newton</td>
+                <td>Baja</td>
+                <td>Identificado</td>
+                <td>RF-0008</td>
+                <td>CU-3000</td>
+                <td>Únicamente para examenes privados de forma global.</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <br/>
+</body>
+</html>
